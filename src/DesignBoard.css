@@ -1,0 +1,22 @@
+.flex-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+}
+
+.layout{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 296px;
+    width: 296px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
