@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+button{
+  width: 80px;
+  height: 40px;
+  margin: 15px;
+}
 
+.blackButton{
+  background-color: black;
+  color: white;
+}
+
+.redButton{
+  background-color: red;
+  color: black;
+}
 
 

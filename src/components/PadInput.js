@@ -8,7 +8,7 @@ const PadInput = () => {
         
         <div className="Container-Row" id = "pad-container">
           
-            <div className=" Container-Row box-container">
+            <div className="column-flex box-container">
 
                 <div className="min-rectangle">1</div>
                 <div className="min-rectangle">2</div>

@@ -2,7 +2,15 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    top: -250px;
+    position: relative;
 }
+
+/* .Second-container{ created to get rid of extra space of the scroll but did not work */
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .flex-wrap{
     flex-wrap: wrap;
