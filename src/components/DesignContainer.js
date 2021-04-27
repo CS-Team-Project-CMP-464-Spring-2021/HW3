@@ -18,6 +18,7 @@ class DesignContainer extends React.Component {
                 <h1 style={{color:"black"}}>DESIGN PAD</h1>
 
                 <DesignBoard />
+                <PadInput />
     
                 
             </div>
