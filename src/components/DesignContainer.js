@@ -7,14 +7,18 @@ class DesignContainer extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            black: true
+            black: true,
+            disabled: true,
         }
           
     }
 
     changeColor = () => {
 
-        this.setState({black: !this.state.black})
+        this.setState({black: !this.state.black});
+        this.setState({
+        disabled: !this.state.disabled,
+        });
     }
 
 
@@ -31,7 +35,9 @@ class DesignContainer extends React.Component {
                 <button className={btn} onClick={this.changeColor.bind(this)}>Edit</button>
 
                 <div>
-                    <PadInput />
+                    <div disabled={this.state.disabled}>
+                        <PadInput />
+                     </div>
                     <DesignBoard />
                 </div>
                 
