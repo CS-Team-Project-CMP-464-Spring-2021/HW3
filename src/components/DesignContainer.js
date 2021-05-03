@@ -32,8 +32,8 @@ class DesignContainer extends React.Component {
                 <button className={btn} onClick={this.changeColor.bind(this.state.btn)}>Edit</button>
 
                 <div>
-                    <PadInput />
-                    <DesignBoard />
+                    <PadInput drag= {this.drag}/>
+                    <DesignBoard drop = {this.drop} allowDrop ={this.allowDrop}/>
                 </div>
                 
             </div>

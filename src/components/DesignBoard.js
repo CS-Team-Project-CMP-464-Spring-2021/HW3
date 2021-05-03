@@ -1,12 +1,19 @@
 import React from 'react';
 import '../DesignBoard.css';
-import designPad from './DesignPad';
+import DesignPad from './DesignPad';
 
 class DesignBoard extends React.Component {
     constructor(props) {
         super(props)
     }
-    
+    allowDrop = (event) => {
+            event.preventDefault();
+    }
+    drop = (event) => {
+            event.preventDefault();
+        var data = event.dataTransfer.getData("text");
+        event.target.style.backgroundColor = data;
+    }
 
 render() {
     return(

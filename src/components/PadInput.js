@@ -9,6 +9,11 @@ class PadInput extends React.Component {
         
     }
 
+    drag = (event) => {
+        event.dataTransfer.setData("text", event.target.id);
+
+    }
+
 
 render() {
     return (
