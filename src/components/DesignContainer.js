@@ -16,19 +16,20 @@ class DesignContainer extends React.Component {
 
         this.setState({black: !this.state.black})
     }
+    
 
 
 
     render(){
 
-        const simple = this.state; 
-        const btn = simple.black ? "blackButton" : "redButton";
+        // const simple = this.state; 
+        const btn = this.state.black ? "blackButton" : "redButton";
 
         return(
 
             <div className="container">
                 <h1 style={{color:"black"}}>DESIGN PAD</h1>
-                <button className={btn} onClick={this.changeColor.bind(this)}>Edit</button>
+                <button className={btn} onClick={this.changeColor.bind(this.state.btn)}>Edit</button>
 
                 <div>
                     <PadInput />
@@ -36,6 +37,7 @@ class DesignContainer extends React.Component {
                 </div>
                 
             </div>
+            
 
     
         );
