@@ -1,34 +1,34 @@
 import React from 'react';
 import '../DesignBoard.css';
+import DesignPad from './DesignPad';
 
+class DesignBoard extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    allowDrop = (event) => {
+            event.preventDefault();
+    }
+    drop = (event) => {
+            event.preventDefault();
+        var data = event.dataTransfer.getData("text");
+        event.target.style.backgroundColor = data;
+    }
 
-const DesignBoard = () => {
-
+render() {
     return(
-        <div class="flex-container">
-            <div class="flex-container flex-wrap" id="designPad">
-                <div class="layout"></div>
-                <div class="layout"></div>
-                <div class="layout"></div>
-                <div class="layout"></div>
+        <div className="flex-container">
+            <div className="flex-containers flex-wrap" id="designPad">
+                <div className="layout" id= "box1" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
+                <div className="layout" id= "box2" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
+                <div className="layout"id= "box3" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
+                <div className="layout"id= "box4" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
             </div>
 
         </div>
     );
 
 }
-
-
-
-// const DesignBoard = () => {
-//     return(
-//         <div>
-//             <DesignPad /> //originally what the constant above that returns the Flex-container was supposed to be called
-            
-//         </div>
-
-//     );
-    
-// }
+}
 
 export default DesignBoard;
