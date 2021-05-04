@@ -7,14 +7,18 @@ class DesignContainer extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            black: true
+            black: true,
+            disabled: true,
         }
           
     }
 
     changeColor = () => {
 
-        this.setState({black: !this.state.black})
+        this.setState({black: !this.state.black});
+        this.setState({
+        disabled: !this.state.disabled,
+        });
     }
     
 

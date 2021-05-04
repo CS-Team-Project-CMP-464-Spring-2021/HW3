@@ -17,4 +17,8 @@ button{
   background-color: red;
   color: black;
 }
+div[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
