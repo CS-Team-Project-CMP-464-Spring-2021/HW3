@@ -36,7 +36,9 @@ class DesignContainer extends React.Component {
                 <button className={btn} onClick={this.changeColor.bind(this.state.btn)}>Edit</button>
 
                 <div>
-                    <PadInput/>
+                    <div disabled={this.state.disabled}>
+                        <PadInput />
+                     </div>
                     <DesignBoard />
                 </div>
                 
