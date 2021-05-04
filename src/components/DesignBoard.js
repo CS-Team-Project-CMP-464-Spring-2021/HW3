@@ -20,9 +20,9 @@ render() {
         <div className="flex-container">
             <div className="flex-containers flex-wrap" id="designPad">
                 <div className="layout" id= "box1" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
-                <div className="layout"></div>
-                <div className="layout"></div>
-                <div className="layout"></div>
+                <div className="layout" id= "box2" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
+                <div className="layout"id= "box3" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
+                <div className="layout"id= "box4" onDrop= {this.drop} onDragOver={this.allowDrop}></div>
             </div>
 
         </div>
